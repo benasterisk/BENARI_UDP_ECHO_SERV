@@ -79,3 +79,22 @@ password = password
 Conclusion :
 This script is a starting point for understanding and developing Asterisk-based applications using ARI. It covers the basics of managing channels, bridges, and external media connections. For production use, it is essential to implement robust error handling, security measures, and follow best practices as outlined in the official Asterisk documentation available at asterisk.org.
 With a touch of humor, it’s important to note that the resource management aspects of this script, such as hanging up channels, releasing ports and UDP sockets, and destroying unused bridges, showed weaknesses under simulated high load using SIP stress testers. This is likely more due to the developer's inexperience with event handlers and multithreading than the stability of the Asterisk system itself.
+
+
+Contributing:
+
+Contributions to BENARI_UDP_ECHO_SERV are welcome! Please feel free to submit a Pull Request.
+
+License:
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+Copyright (c) 2024 Michaël Benarouch (benasterisk@gmail.com) GitHub Repository: https://github.com/benasterisk/BENARI_UDP_ECHO_SERV
+
+Acknowledgments:
+
+
+Asterisk (https://www.asterisk.org/) for the PBX system integration
+BENARI_UDP_ECHO_SERV is provided as-is, without any guarantees or warranty. The authors are not responsible for any damage or data loss that may occur from the use of this script.
+
