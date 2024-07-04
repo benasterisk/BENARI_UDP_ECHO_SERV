@@ -1,7 +1,7 @@
 
 BENARI_UDP_ECHO_SERV
 Asterisk Python ARI (Rest Interface) basic demonstration with embedded Dynamic UDP Socket Server
-
+ 
 Introduction
 This script is designed to serve as a basic framework for developing more comprehensive Asterisk applications. It demonstrates the functionalities of the Asterisk Stasis interface and its REST API, focusing on External Media for UDP socket connections to transport audio, as well as managing bridges and channels. The purpose of this script is to help users understand the common mechanics employed during Asterisk development. It should be noted that this script is a demonstration and does not follow professional development standards for secure and robust implementations.
 
