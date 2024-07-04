@@ -16,16 +16,17 @@ Script Functionality
 •	Event Handling: Handles Stasis events for channels and manages call flow.
 •	RTP Echo Server: Implements a simple RTP echo server to demonstrate external media handling.
 •	Cleanup Mechanism: Ensures proper resource cleanup, including hanging up channels, destroying bridges, and releasing ports.
-Global Sequence
+
+Global Sequence :
 1.	Call enters Stasis: An inbound call enters the Stasis application voicebot1.
 2.	External Media Setup: The script sets up an external media connection to an RTP echo server, emulating a future voicebot.
 3.	Waiting Period: The script waits for 7 seconds.
 4.	Call Origination: A new call is originated to redirect the caller to an external Avaya extension 4438007, which plays music infinitely.
 5.	Event Monitoring: If the caller or the dialed Avaya destination hangs up, the script monitors events and destroys the corresponding bridge and channel, and frees the UDP socket.
-Key Functions and Sequences
+
+Key Functions and Sequences :
 1. Initialization and Connection
-python
-Copy code
+
 import logging
 import requests
 import ari
@@ -38,6 +39,7 @@ import time
 logging.basicConfig(level=logging.INFO)
 
 client = ari.connect('http://10.0.0.1:8088', 'asterisk', 'password')
+
 •	Sets up logging and connects to the Asterisk ARI using the provided credentials.
 2. Port Management
 python
