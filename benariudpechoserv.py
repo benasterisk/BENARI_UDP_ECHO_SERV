@@ -9,7 +9,7 @@ import time
 
 logging.basicConfig(level=logging.INFO)
 
-client = ari.connect('http://10.0.0.1:8700', 'asterisk', 'password')
+client = ari.connect('http://10.0.0.1:8088', 'asterisk', 'password')
 
 PORT_RANGE_START = 26500
 PORT_RANGE_END = 26999
